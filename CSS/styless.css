@@ -121,6 +121,7 @@ html body {
     flex-direction: column;
     align-items:center;
     background: var(--background-gray);
+    
 }
 .card-game h1{
     font-family: Poppins;
@@ -163,7 +164,9 @@ html body {
     align-items:flex-start;
     background: var(--background-gray);
     border-radius: 10px;
-    padding:16px 8px 40px 8px;
+    margin:16px 8px 40px 12px;
+    padding-left: 8px;
+    
 }
 .card-form-cadastro{
     display: flex;
@@ -222,7 +225,6 @@ html body {
     justify-items: center;
 }
 
-
 .selection-form-button-enviar button{  
     width: 244px;
     height: 67px;
@@ -249,9 +251,38 @@ html body {
     font-weight: 700;
     margin: 0px 30px 20px 26px;
 }
-.footer{
 
+footer{
+    background:var(--background-footer);
+    color:var(--white);
+    height:302px;   
 }
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+   
+}
+
+.text-footer h1{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center; 
+     
+}
+.text-footer-left{
+    margin-top: 28px;
+    margin-bottom: 37px;
+}
+.text-footer-center{
+    margin-bottom: 37px;
+}
+.text-footer-right{
+    margin-bottom:30px;
+}
+
 
 
 
