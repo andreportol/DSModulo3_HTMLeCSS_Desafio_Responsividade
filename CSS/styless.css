@@ -6,7 +6,8 @@
     --red:#DD7E92;
     --background-gray:#F0F0F0;
     --background-footer:#383838;
-    --white:#FFFFFF;  
+    --white:#FFFFFF; 
+    --gray-placeholder:#c4c4c4; 
 }
 * {
     box-sizing: border-box; /* A largura da borda é descontada do tamanho */
@@ -112,7 +113,150 @@ html body {
     height: 67px;
     border-radius:8px;
     border:0px;
+    margin-top:28px;
+    margin-bottom: 40px;
 }
+.card-game{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: var(--background-gray);
+}
+.card-game h1{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size:24px;
+    color: var(--green);
+    padding-top:40px;
+    padding-bottom:28px;
+    margin: 0px;
+}
+.card-game img{
+    width:300px;
+    height:326px;
+    padding:0px;
+    margin:0px; 
+}
+.container-form{
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto;
+}
+.section-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--white);
+}
+.section-form h2{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-gray);
+    padding-top: 40px;
+    padding-bottom: 16px;
+    margin: 0px;
+}
+.card-form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background: var(--background-gray);
+    border-radius: 10px;
+    padding:16px 8px 40px 8px;
+}
+.card-form-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 52px;
+}
+.card-form-cadastro input{
+    width: 280px;
+    height: 50px;
+    border: 1px solid var(--text-gray);
+    border-radius: 4px;
+    background-color: var(--white);
+    margin: 0px 12px 20px 0px;  
+}
+.selection-form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.selection-form h3{
+   font-family: Poppins;
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--text-gray);
+   margin-top: 20px;
+   
+}
+.selection-form input{
+    margin: 0px;
+    width: 23px;
+    height: 23px;
+ }
+.section-form ::placeholder{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-placeholder);
+    padding: 13px 214px 13px 22px;
+}
+.selection-form label{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-top: 8px;
+    
+ }
+
+ .selection-form-checkbox{
+    margin-top: 35px;
+ }
+.selection-form-button{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+.selection-form-button-enviar button{  
+    width: 244px;
+    height: 67px;
+    background-color: var(--red);
+    border-radius: 8px;
+    color: var(--white);
+    border: 0px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 47px 30px 20px 26px;  
+}
+
+
+.selection-form-button-limpar button{
+    width: 244px;
+    height: 67px;
+    background-color: var(--white);
+    border: 2px var(--red) solid;
+    border-radius: 8px;
+    color: var(--red);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 30px 20px 26px;
+}
+.footer{
+
+}
+
+
+
+
+
 
 
 
