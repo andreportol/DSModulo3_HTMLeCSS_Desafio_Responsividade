@@ -2,230 +2,319 @@
 
 :root {
     --green: #38AF90;
-    --text-gray:#797979;
-    --red:#DD7E92;
-    --background-gray:#F0F0F0;
-    --background-footer:#383838;
-    --white:#FFFFFF; 
-    --gray-placeholder:#c4c4c4; 
+    --text-gray: #797979;
+    --red: #DD7E92;
+    --background-gray: #F0F0F0;
+    --background-footer: #383838;
+    --white: #FFFFFF;
+    --gray-placeholder: #c4c4c4;
 }
+
 * {
-    box-sizing: border-box; /* A largura da borda é descontada do tamanho */
+    box-sizing: border-box;
+    /* A largura da borda é descontada do tamanho */
 }
+
 html body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-.nav-bar{
+
+.nav-bar {
     background: var(--green);
-    height: 90px;  
+    height: 90px;
 }
-.nav-main{
+
+.nav-main {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    
 }
-.nav-main h1{
+
+.nav-main h2 {
     color: var(--white);
-    font-family:Poppins;
+    font-family: Poppins;
     font-size: 18px;
 }
-.nav-main img{
+
+.nav-main img {
     width: 62px;
     height: 62px;
 }
-.container{
+
+.container {
     width: 100%;
     max-width: 990px;
     margin: 0 auto;
+
 }
-.section-news{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+
+.section-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    margin-bottom:8px;
+    margin-bottom: 8px;
 }
-.title-card-news{
-    margin:0px;
+
+.title-card-news {
+    margin: 0px;
     padding: 0px;
-    color: var(--text-gray);
     display: flex;
     justify-content: center;
 }
-.card-news{
+
+.title-card-news h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    color: var(--text-gray);
+    font-size: 24px;
+}
+
+.card-news {
     background: var(--background-gray);
     padding: 10px;
-    border-radius:8px;
-    
+    border-radius: 8px;
 }
-.card-news h2{
+
+.card-news h2 {
     color: var(--green);
     font-size: 16px;
     font-family: Poppins;
     font-weight: 700;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.card-news h3{
+
+.card-news h3 {
     color: var(--text-gray);
     font-family: Poppins;
     font-weight: 700;
-    margin:0;
-    padding-bottom:3px;
+    margin: 0;
+    padding-bottom: 3px;
     font-size: 12px;
 }
-.card-news h4{
+
+.card-news h4 {
     border-top: #38AF90 1px solid;
-    color:var(--green);
+    color: var(--green);
     font-family: Poppins;
     font-weight: 400;
     font-size: 10px;
-    margin:0px;
-    padding-top:1px;   
+    margin: 0px;
+    padding-top: 1px;
 }
-.card-news p{
-    color:var(--text-gray);
+
+.card-news p {
+    color: var(--text-gray);
     font-family: Poppins;
     font-weight: 400;
     font-size: 10px;
-    margin:0px;
-    padding-top:12px;   
+    margin: 0px;
+    padding-top: 12px;
 }
-.card-news h5{
-    color:var(--red);
+
+.card-news h5 {
+    color: var(--red);
     font-family: Poppins;
     font-weight: 700;
     font-size: 14px;
-    margin:0px;
-    padding-top:15px;
-    padding-bottom: 18px;   
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 18px;
 }
-.section-news button{
-    color:var(--white);
+
+.section-news button {
+    color: var(--white);
     background: var(--red);
     font-family: Poppins;
     font-weight: 700;
     font-size: 18px;
     width: 244px;
     height: 67px;
-    border-radius:8px;
-    border:0px;
-    margin-top:28px;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 28px;
     margin-bottom: 40px;
 }
-.card-game{
+
+.card-game {
     display: flex;
     flex-direction: column;
-    align-items:center;
     background: var(--background-gray);
-    
 }
-.card-game h1{
+
+.container h1 {
     font-family: Poppins;
     font-weight: 700;
-    font-size:24px;
+    font-size: 24px;
     color: var(--green);
-    padding-top:40px;
-    padding-bottom:28px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 28px;
     margin: 0px;
 }
-.card-game img{
-    width:300px;
-    height:326px;
-    padding:0px;
-    margin:0px; 
+
+.card-game img {
+    width: 300px;
+    height: 326px;
+    padding: 0px;
+    margin: 0px;
 }
-.container-form{
+
+.container-form {
     width: 100%;
     max-width: 790px;
     margin: 0 auto;
 }
-.section-form{
+
+.section-form {
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:var(--white);
+    margin-bottom: 40px;
 }
-.section-form h2{
+
+.section-form h2 {
     font-family: Poppins;
     font-weight: 700;
     font-size: 24px;
+    align-items: center;
     color: var(--text-gray);
     padding-top: 40px;
     padding-bottom: 16px;
     margin: 0px;
 }
-.card-form{
+
+.card-form {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     background: var(--background-gray);
-    border-radius: 10px;
-    margin:16px 8px 40px 12px;
+    border-radius: 8px;
+    margin: 0px 8px 0px 12px;
     padding-left: 8px;
-    
 }
-.card-form-cadastro{
+
+.card-form-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 52px;
 }
-.card-form-cadastro input{
+
+.card-form-cadastro input {
     width: 280px;
     height: 50px;
     border: 1px solid var(--text-gray);
     border-radius: 4px;
     background-color: var(--white);
-    margin: 0px 12px 20px 0px;  
+    margin: 0px 12px 20px 0px;
 }
-.selection-form{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
-.selection-form h3{
-   font-family: Poppins;
-   font-weight: 400;
-   font-size: 16px;
-   color: var(--text-gray);
-   margin-top: 20px;
-   
-}
-.selection-form input{
-    margin: 0px;
-    width: 23px;
-    height: 23px;
- }
-.section-form ::placeholder{
+
+.section-form ::placeholder {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
     color: var(--gray-placeholder);
     padding: 13px 214px 13px 22px;
 }
-.selection-form label{
+
+.selection-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.selection-form h3 {
     font-family: Poppins;
     font-weight: 400;
     font-size: 16px;
     color: var(--text-gray);
-    margin-top: 8px;
-    
- }
-
- .selection-form-checkbox{
-    margin-top: 35px;
- }
-.selection-form-button{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
 }
 
-.selection-form-button-enviar button{  
+.radio-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-form input {
+    width: 23px;
+    height: 23px;
+}
+
+.radio-form label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-gray);
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.a label {
+    padding-left: 7px;
+}
+a input{
+    margin: 0;
+    padding-left: 0px;
+}
+
+.b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.b label {
+    padding-left: 7px;
+}
+
+.c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.c label {
+    padding-left: 7px;
+}
+
+.selection-form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-top: 35px;
+}
+
+.selection-form-checkbox input {
+    width: 23px;
+    height: 23px;
+}
+
+.selection-form-checkbox label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-gray);
+    padding-left: 7px;
+}
+
+.selection-form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.selection-form-button-enviar button {
     width: 244px;
     height: 67px;
     background-color: var(--red);
@@ -235,11 +324,10 @@ html body {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
-    margin: 47px 30px 20px 26px;  
+    margin: 47px 30px 20px 26px;
 }
 
-
-.selection-form-button-limpar button{
+.selection-form-button-limpar button {
     width: 244px;
     height: 67px;
     background-color: var(--white);
@@ -252,43 +340,37 @@ html body {
     margin: 0px 30px 20px 26px;
 }
 
-footer{
-    background:var(--background-footer);
-    color:var(--white);
-    height:302px;   
+footer {
+    background: var(--background-footer);
+    color: var(--white);
+    height: 302px;
 }
-.text-footer{
+
+.text-footer {
     display: flex;
     flex-direction: column;
     align-content: space-around;
     text-align: center;
-   
+
 }
 
-.text-footer h1{
+.text-footer h1 {
     font-family: Poppins;
     font-weight: 400;
     font-size: 14px;
-    align-items: center; 
-     
+    align-items: center;
+
 }
-.text-footer-left{
+
+.text-footer-left {
     margin-top: 28px;
     margin-bottom: 37px;
 }
-.text-footer-center{
+
+.text-footer-center {
     margin-bottom: 37px;
 }
-.text-footer-right{
-    margin-bottom:30px;
+
+.text-footer-right {
+    margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
-
-
