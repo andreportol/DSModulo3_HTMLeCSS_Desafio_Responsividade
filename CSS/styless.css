@@ -30,7 +30,9 @@ html body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    height: 90px;
+    padding-left: 10px;
 }
 
 .nav-main h2 {
@@ -39,10 +41,26 @@ html body {
     font-size: 18px;
 }
 
-.nav-main img {
+.nav-main-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.nav-main-text h3 {
+    color: var(--green);
+    font-family: Poppins;
+    font-size: 6px;
+}
+
+.nav-main-text img {
     width: 62px;
     height: 62px;
 }
+
 
 .container {
     width: 100%;
@@ -57,13 +75,6 @@ html body {
     align-items: center;
     padding: 10px;
     margin-bottom: 8px;
-}
-
-.title-card-news {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
 }
 
 .title-card-news h2 {
@@ -202,8 +213,9 @@ html body {
 .card-form-cadastro {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: flex-start;
     margin-top: 52px;
+    width: 760px;
 }
 
 .card-form-cadastro input {
@@ -263,7 +275,8 @@ html body {
 .a label {
     padding-left: 7px;
 }
-a input{
+
+a input {
     margin: 0;
     padding-left: 0px;
 }
@@ -343,34 +356,153 @@ a input{
 footer {
     background: var(--background-footer);
     color: var(--white);
-    height: 302px;
 }
 
-.text-footer {
+.text-footer{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
-    text-align: center;
-
+    align-content: space-evenly;
+}
+.text-footer-left{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 28px;
 }
 
-.text-footer h1 {
+.text-footer-left h1{
     font-family: Poppins;
     font-weight: 400;
     font-size: 14px;
-    align-items: center;
-
+    text-align: center;
+    color: var(--white);
+    padding: 0px;
+    margin: 0px;
 }
 
-.text-footer-left {
-    margin-top: 28px;
-    margin-bottom: 37px;
+.text-footer-left h2{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+.text-footer-center h1{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+}
+.text-footer-right h1{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+    padding: 0px;
+    margin: 0px;
+}
+.text-footer-right h2{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 30px;
 }
 
-.text-footer-center {
-    margin-bottom: 37px;
-}
+@media(min-width: 1200px) {
+    .nav-main h2 {
+        font-size: 24px;
+    }
 
-.text-footer-right {
-    margin-bottom: 0px;
+    .nav-main-text h3 {
+        color: var(--white);
+        padding-right: 29px;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    .title-card-news h2 {
+        font-size: 36px;
+    }
+
+    .card-news h2 {
+        font-size: 24px;
+    }
+
+    .card-news h3 {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .section-form h2 {
+        font-size: 36px;
+    }
+
+    .card-form-cadastro {
+        align-items: center;
+        margin-top: 52px;
+        width: 760px;
+    }
+
+    .card-form-cadastro input {
+        width: 642px;
+    }
+
+    .selection-form-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 760px;
+        padding-top: 38px;
+        padding-bottom: 52px;
+    }
+
+    .selection-form-button button {
+        margin: 0px;
+        padding-top: 0px;
+    }
+    
+    .text-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 302px;
+        align-items: center;
+    }
+
+    .text-footer h1 {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--white);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .text-footer-center {
+        margin-top: 35px
+    }
+
+    .text-footer h2 {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        align-items: center;
+        color: var(--white);
+        padding: 0px;
+        margin: 0px;
+    }
+
 }
